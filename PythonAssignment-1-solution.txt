@@ -132,3 +132,13 @@ Q25. Write a program to display only those numbers from a list that satisfy the 
 ```
 numbers = [12, 75, 150, 180, 145, 525, 50]
 ```
+A25.
+	numbers = [12, 75, 150, 180, 145, 525, 50]
+	answer = []
+	for i in range(len(numbers)):
+		if numbers[i] > 500:
+			break
+		else:
+			if numbers[i]%5 == 0 and numbers[i] < 150:
+				answer.append(numbers[i])
+	print('These are the numbers that satisfy the condition:', answer)
